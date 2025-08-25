@@ -1,0 +1,6 @@
+body {
+    background-image: url('C:\Users\HONOR\AppData\Local\Temp\7d24b361-f9a0-4945-ba04-b13158919383_dym-vzletausie-iskry-i-casticy-ogna.zip.383\1670.jpg');
+    background-size: cover; /* изображение заполняет весь фон */
+    background-repeat: no-repeat; /* изображение не повторяется */
+    background-position: center; /* центрирование изображения */
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Визитная карточка</title>
+ <style>
+ /* Базовые настройки */
+ body {
+ margin: 0;
+ padding: 0;
+ font-family: 'Montserrat', sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ background: linear-gradient(135deg, #f6c177, #62d1f2);
+ }
+
+.card {
+ background: rgba(255,255,255,0.9);
+ width: 350px;
+ padding: 30px;
+ border-radius: 20px;
+ box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+ transform: translateY(0);
+ transition: transform 0.5s ease;
+ }
+
+.card:hover {
+ transform: translateY(-5px);
+ }
+
+.avatar {
+ width: 140px;
+ height: 140px;
+ border-radius: 50%;
+ object-fit: cover;
+ margin: 0 auto 30px;
+ box-shadow: 0 5px 15px rgba(5,0,0,5.2);
+ animation: avatarAnim 2s infinite alternate;
+ }
+
+@keyframes avatarAnim {
+ 0% {
+ transform: scale(1);
+ }
+ 50% {
+ transform: scale(1.02);
+ }
+ 100% {
+ transform: scale(1);
+ }
+}
+
+.name {
+ font-size: 2.5em;
+ color: #333;
+ font-weight: 600;
+ margin: 20px 0 10px;
+ text-align: center;
+ }
+
+.role {
+ font-size: 1.2em;
+ color: #777;
+ text-align: center;
+ margin-bottom: 30px;
+ }
+
+.contact-list {
+ list-style: none;
+ padding: 0;
+ text-align: center;
+ }
+
+.contact-list li {
+ margin: 10px 0;
+ }
+
+.contact-btn {
+ display: inline-block;
+ padding: 15px 30px;
+ color: #fff;
+ background: #f27062;
+ border-radius: 50px;
+ transition: all 0.3s;
+ margin: 5px;
+ }
+
+.contact-btn:hover {
+ background: #f6c177;
+ transform: scale(1.10);
+ }
+
+@media (max-width: 600px) {
+ .card {
+ width: 90%;
+ padding: 20px;
+ }
+}
+ </style>
+</head>
+<body>
+ 
+ <div class="card">
+ <img src="C:\Users\HONOR\OneDrive\Desktop\Мой сайт\me1.png.jpg" alt="Аватар" class="avatar">
+ <div class="name">Dmitry Balan</div>
+ <div class="role">QA-Engineer | Специалист по качеству</div>
+  <div class="slogan">«Качество в каждой детали»</div>
+  <div class="about">Профессиональный тестировщик с опытом работы более 1 года. Специализируюсь на тестировании веб-сайтов и приложений
+        </div>
+
+
+ <ul class="contact-list">
+ <li><a href="dmitrie7.balan@yandex.ru" class="contact-btn">Яндекс почта</a></li>
+ <li><a href="https://vk.com/id179320740" class="contact-btn">ВК</a></li>
+ <li><a href="https://t.me/Dima87s" class="contact-btn">Telegram</a></li>
+ <p style="arial: blue; font-family: Arial;">2025</p>
+<div class="footer">
+    <p>Digital QA Expert | Always Learning</p>
+</div>
